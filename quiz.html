@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Show</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="row py-4" id="firstRow">
+          <div class="col-md-12 text-center">
+            <h4 class="text-dark">QUIZ!</h4>
+          </div>
+        <!-- <div class="col-md-12 text-center py-4">
+            <button type="button" class="btn btn-primary" id="start">Start!</button>
+        </div> -->
+        </div>
+    </div>
+    <div class="container main">
+        <fieldset>
+            <div class="question-text text-center py-4">Q. H2O is the chemical formula of ?</div>  
+            <div class="option-container text-center">
+                <!-- <div id="0" class="option" onclick="getResult(this)" style="animation-delay: 0.15s;">Hydrogen</div>
+                <div id="3" class="option" onclick="getResult(this)" style="animation-delay: 0.3s;">Gulocose</div>
+                <div id="2" class="option" onclick="getResult(this)" style="animation-delay: 0.45s;">Salt</div>
+                <div id="1" class="option" onclick="getResult(this)" style="animation-delay: 0.6s;">Water</div></div> -->
+                <button type="button" class="btn btn-secondary">
+                    <input name="ch" id="q1-a1" type="radio">Gulocose</input>
+                </button>
+                <br/>
+                <button type="button" class="btn btn-secondary">
+                    <input name="ch" id="q1-a2" type="radio">Salt</input>
+                </button>
+                <br/>
+                <button type="button" class="btn btn-secondary">
+                    <input name="cj" id="q1-a3" type="radio">Acid</input>
+                </button>
+                <br/>
+                <button type="button" class="btn btn-secondary">
+                    <input name="ch" id="q1-a4" type="radio">Water</input>
+                </button>
+            </div>
+        </fieldset>
+    </div>
+    <br/>
+    <br/>
+    <div class="container main">
+        <fieldset>
+            <div class="question-text text-center py-4">Q. Who proposed theory of relativity?</div>  
+            <div class="option-container text-center">
+                <button type="button" class="btn btn-secondary">
+                    <input name="ph" id="q2-a1" type="radio">Einstine</input>
+                </button>
+                <br/>
+                <button type="button" class="btn btn-secondary">
+                    <input name="ph" id="q2-a2" type="radio">Newton</input>
+                </button>
+                <br/>
+                <button type="button" class="btn btn-secondary">
+                    <input name="ph" id="q3-a3" type="radio">Delton</input>
+                </button>
+                <br/>
+                <button type="button" class="btn btn-secondary">
+                    <input name="ph" id="q4-a4" type="radio">Rutherford</input>
+                </button>
+            </div>
+        </fieldset>
+    </div>
+    <br/>
+    <br/>
+    <div class="container main">
+        <fieldset>
+            <div class="question-text text-center py-4">Q. Who win Champions trophy 2018 ?</div>  
+            <div class="option-container text-center">
+                <button type="button" class="btn btn-secondary">
+                    <input name="ct" id="q3-a1" type="radio">Pakistan</input>
+                </button>
+                <br/>
+                <button type="button" class="btn btn-secondary">
+                    <input name="ct" id="q3-a2" type="radio">India</input>
+                </button>
+                <br/>
+                <button type="button" class="btn btn-secondary">
+                    <input name="ct" id="q3-a3" type="radio">England</input>
+                </button>
+                <br/>
+                <button type="button" class="btn btn-secondary">
+                    <input name="ct" id="q3-a4" type="radio">Australia</input>
+                </button>
+            </div>
+        </fieldset>
+    </div>
+    <br/>
+    <br/>
+    <div class="container main">
+        <fieldset>
+            <div class="question-text text-center py-4">Q. which city is the capital of Turkey ?</div>  
+            <div class="option-container text-center">
+                <button type="button" class="btn btn-secondary">
+                    <input name="tr" id="q4-a1" type="radio">Istanbul</input>
+                </button>
+                <br/>
+                <button type="button" class="btn btn-secondary">
+                    <input name="tr" id="q4-a2" type="radio">Ankara</input>
+                </button>
+                <br/>
+                <button type="button" class="btn btn-secondary">
+                    <input name="tr" id="q4-a3" type="radio">Izmir</input>
+                </button>
+                <br/>
+                <button type="button" class="btn btn-secondary">
+                    <input name="tr" id="q4-a4" type="radio">Gresun</input>
+                </button>
+            </div>
+        </fieldset>
+    </div>
+    <br/>
+    <br/>
+    <div class="container main">
+        <fieldset>
+            <div class="question-text text-center py-4">Q. Famous urdu novel Jannat Kay Pattay was written by ?</div>  
+            <div class="option-container text-center">
+                <button type="button" class="btn btn-secondary">
+                    <input name="urdu" id="q5-a1" type="radio">Bano Qudsia</input>
+                </button>
+                <br/>
+                <button type="button" class="btn btn-secondary">
+                    <input name="urdu" id="q5-a2" type="radio">Umera Ahmed</input>
+                </button>
+                <br/>
+                <button type="button" class="btn btn-secondary">
+                    <input name="urdu" id="q5-a3" type="radio">Nemra Ahmed</input>
+                </button>
+                <br/>
+                <button type="button" class="btn btn-secondary">
+                    <input name="urdu" id="q5-a4" type="radio">Khadija Mastoor</input>
+                </button>
+                
+            </div>
+        </fieldset>
+    </div>
+    <div class="col-md-12 text-center py-4">
+        <button type="button" class="btn btn-dark" id="submit" onclick="check()">Submit</button>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

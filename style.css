@@ -1,0 +1,24 @@
+body{
+    /* padding-bottom: 30px; */
+    background-color: rgb(122, 123, 124);
+}
+.main{
+    width: 700px;
+    height: 300px;
+    border: 1px solid rgb(43, 42, 42);
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.btn-secondary{
+    width: 200px;
+    height: 40px;
+    display: inline;
+    margin-top: 10px;
+    
+}
+.question-text{
+    font-size: 20px;
+    font-weight: bold;
+}
